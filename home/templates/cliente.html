@@ -9,17 +9,21 @@
 </head>
 <body>
     <h1>hola como estas!</h1>
+    <p>Empresas:</p>
 
-    {% block content %}
-        <div>
-            <p>Empresas:</p>
+    <main style="justify-content: center; margin-top: 15%; display: flex;">
+        {% block content %}
+        <div style="display: grid; grid-template-columns: repeat(3, 3fr); gap: 4rem; width: 50%;">
             {% for p in Empresas %}
-                <p style="color: black;">
-                    {{p.name}}
-                </p>
+                <a href="" class="container px-4 py-4 bg-white" style="color: red;">
+                    <p style="color: black;">
+                        {{p.name}}
+                    </p>
+                </a>
             {% endfor %}
         </div>        
     {% endblock %}
+    </main>
 
 </body>
 

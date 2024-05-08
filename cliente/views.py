@@ -8,5 +8,4 @@ def cliente(request):
     context = {
         'Empresas': products_queryset
     }
-    print(context)
     return render(request,'cliente.html',context)
