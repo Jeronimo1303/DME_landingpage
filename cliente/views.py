@@ -6,6 +6,7 @@ from cliente.models import empresa
 def cliente(request):
     products_queryset = empresa.objects.all()
     context = {
-        'Empresas': products_queryset
+        'Empresas': products_queryset,
+        'name' : "DME"
     }
     return render(request,'cliente.html',context)
