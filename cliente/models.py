@@ -7,3 +7,5 @@ class empresa(models.Model):
     usernameComputrabajo = models.CharField(max_length=100, blank=True, null=True)
     usernameInstagram = models.CharField(max_length=100, blank=True, null=True)
     usernameFacebook = models.CharField(max_length=100, blank=True, null=True)
+
+
