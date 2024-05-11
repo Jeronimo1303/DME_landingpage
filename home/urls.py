@@ -10,9 +10,15 @@ urlpatterns = [
     path('landingpage/', lp_v.cliente, name = "cliente")
 ]
 
+current_directory = os.path.dirname(os.path.abspath(__file__))
 
-files = []
-for (path, dirnames, filenames) in os.walk('logos'):
-    files.extend(os.path.join(path, name) for name in filenames)
+image_path = "logos"
 
-print(files)
+image_directory = os.path.join(current_directory,image_path)
+
+logos_paths = []
+for filename in os.listdir(image_directory):
+    if filename.endswith(".png"):
+        logos_paths.append(os.path.join(image_directory,filename))
+
+print(logos_paths)
