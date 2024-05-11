@@ -10,29 +10,20 @@
 <body>
     
     <header style="width: 100%; z-index: 1000; display: flex; align-items: center; justify-content: space-between; overflow: hidden;  padding: 1rem 1rem 1rem 0; background-color: #a20b27; color: #fff;">
+        
         <p>DME</p>
     </header>
     <h1>hola como estas!</h1>
-
     <form action="/action_page.php">
         <label for="cars">Choose a car:</label>
         <select name="cars" id="cars">
             {% for p in Empresas %}
             <option value="{{p.name}}">{{p.name}}</option>
             {% endfor %}
-
-
-
-          <option value="volvo">Volvo</option>
-          <option value="saab">Saab</option>
-          <option value="opel">Opel</option>
-          <option value="audi">Audi</option>
         </select>
         <br><br>
         <input type="submit" value="Submit">
     </form>
-
-
     <p>Empresas:</p>
 
     <main style="justify-content: center; margin-top: 15%; display: flex;">
@@ -46,7 +37,7 @@
                 </a>
             {% endfor %}
         </div>        
-        {% endblock %}
+    {% endblock %}
     </main>
 
 </body>
