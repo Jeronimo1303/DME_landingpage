@@ -53,27 +53,29 @@
     <main style="justify-content: center; margin-top: 15%; display: flex;">
         {% block content %}
         <div style="display: grid; grid-template-columns: repeat(3, 3fr); gap: 4rem; width: 50%;">
-            {% for p in Empresas %}
-                <a href="" class="container px-4 py-4 bg-white" style="color: red;">
-                    <p style="color: black;">
-                        {{p.name}}
-                    </p>
-                </a>
-            {% endfor %}
-        </div>
-        <div class="grid-container">
             <div class="grid-item">
-                <div class="name">Name 1</div>
-                <div class="image-overlay">
-                    <img src="logos/pactia.png" alt="Image 1">
-                </div>
+                <img src="{% static '/logos/pactia.png' %}" alt="image 1">
             </div>
             <div class="grid-item">
-                <div class="name">Name 2</div>
-                <div class="image-overlay">
-                    <img src="logos/colsubsidio.png" alt="Image 2">
-                </div>
+                <img src="{% static '/logos/colsubsidio.png' %}" alt="image 1">
             </div>
+
+
+
+            <!-- <div class="grid-container">
+                <div class="grid-item">
+                    <div class="name">Name 1</div>
+                    <div class="image-overlay">
+                        <img src="{% static '/logos/pactia.png' %}" alt="Image 1">
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="name">Name 2</div>
+                    <div class="image-overlay">
+                        <img src="logos/colsubsidio.png" alt="Image 2">
+                    </div>
+                </div>
+            </div> -->
         </div>
     {% endblock %}
     </main>

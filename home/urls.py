@@ -12,7 +12,7 @@ urlpatterns = [
 
 current_directory = os.path.dirname(os.path.abspath(__file__))
 
-image_path = "logos"
+image_path = "static/logos"
 
 image_directory = os.path.join(current_directory,image_path)
 
