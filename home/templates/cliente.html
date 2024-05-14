@@ -6,33 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{name}}</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
     <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Grid with Images on Top of Names</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body>
 
-    <header style="width: 100%; z-index: 1000; display: flex; align-items: center; justify-content: space-between; overflow: hidden;  padding: 1rem 1rem 1rem 0; background-color: #a20b27; color: #fff;">
-        <nav style="display: flex;align-items: center;justify-content: center;padding-right: 40px;">
-            <p>DME</p>
-            <p>Acerca de Nosotros</p>
-            <p>Hola</p>
+<body>
+    <header class="main-header">
+        <nav class="nav">
+            <h1><img src="{% static '/Logos/DMElogo.png' %}" alt="LCM_Logo" class="logo" width="200" ></h1>
+            <a href="">
+                DME
+            </a>
+            <a href="">
+                Acerca de Nosotros
+            </a>
         </nav>
     </header>
-    <h1>hola como estas!</h1>
-    <p>Empresas:</p>
 
-    <main style="justify-content: center; margin-top: 15%; display: flex;">
+    <div class="main-content">
+        <h1>Bienvenido a DME!</h1>
+        <div class="submit-btn">
+            <form action="/action_page.php">
+                <label for="cars"></label>
+                <select name="cars" id="cars">
+                    {% for p in Empresas %}
+                        <option value="{{p.name}}">{{p.name}}</option>
+                    {% endfor %}
+                </select>
+                <br><br>
+                <input type="submit" value="Submit" style="background-color: green;">
+            </form>
+        </div>
+    
+    </div>
+
+    <main class="main-grid">
         {% block content %}
         <div style="display: grid; grid-template-columns: repeat(3, 3fr); gap: 4rem; width: 50%;">
-            <div class="grid-item">
-                <img src="{% static '/logos/pactia.png' %}" alt="image 1">
+            <div class="grid-container">
+                <div class="grid-item">
+                    <img src="{% static '/logos/pactia.png' %}" alt="image 1">
+                </div>
             </div>
-            <div class="grid-item">
-                <img src="{% static '/logos/colsubsidio.png' %}" alt="image 1">
+            <div class="grid-container">
+                <div class="grid-item">
+                    <img src="{% static '/logos/colsubsidio.png' %}" alt="image 1">
+                </div>
             </div>
-
+            <div class="grid-container">
+                <div class="grid-item">
+                    <img src="{% static '/logos/claro.png' %}" alt="image 1">
+                </div>
+            </div>
+            
 
 
             <!-- <div class="grid-container">
