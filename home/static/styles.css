@@ -40,7 +40,7 @@
     justify-content: space-between;
     overflow: hidden;
     padding: 1rem 1rem 1rem 0;
-    background-color: green;
+    background-color: #2337c6;
     color: #fff;
 }
 .nav{
@@ -54,8 +54,8 @@
 
 a{
     border-radius: 10px;
-    background-color: green;
-    color: white;
+    background-color: white;
+    color: black;
     font-size: 17px;
     text-decoration: none;
     border: none;
@@ -92,4 +92,8 @@ a{
     justify-content: center;
     margin-top: 15%;
     display: flex;
+}
+
+body{
+    background-color: #fafafa;
 }
