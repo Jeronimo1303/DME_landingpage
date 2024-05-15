@@ -108,7 +108,7 @@ a{
 body {
     /* Keep the background pattern opaque */
     background: repeating-linear-gradient(-45deg, rgba(0, 0, 0, 0.2), rgba(68, 76, 247, 0.2) 5px, rgba(31, 254, 158, 0.1) 5px, rgba(0, 0, 0, 0.2) 25px);
-}   
+}
 
 .image-container {
     position: relative;
@@ -140,7 +140,7 @@ input :hover{
 
 h1{
     /* Your existing styles for h1 */
-    font-size: 200px; /* Example font size */
+    font-size: 100px; /* Example font size */
     transition: transform 0.3s ease; /* Adding a smooth transition effect */
 }
 h1 :hover{
@@ -148,10 +148,10 @@ h1 :hover{
 }
 
 select{
-    font-size: 50px; 
-    font-weight: bold; 
-    display: block; 
-    color: #ffffff; 
+    font-size: 50px;
+    font-weight: bold;
+    display: block;
+    color: #ffffff;
     text-decoration: none;
     background-color: #0b0a22;
     text-align: center;
