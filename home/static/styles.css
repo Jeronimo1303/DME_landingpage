@@ -102,5 +102,5 @@ a{
 body {
     /* Keep the background pattern opaque */
     background: repeating-linear-gradient(-45deg, rgba(68, 76, 247, 0.5), rgba(68, 76, 247, 0.5) 5px, rgba(229, 229, 247, 0.5) 5px, rgba(229, 229, 247, 0.5) 25px);
-}
+}   
 
