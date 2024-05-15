@@ -104,3 +104,27 @@ body {
     background: repeating-linear-gradient(-45deg, rgba(68, 76, 247, 0.5), rgba(68, 76, 247, 0.5) 5px, rgba(229, 229, 247, 0.5) 5px, rgba(229, 229, 247, 0.5) 25px);
 }   
 
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.info-box {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0,0,0,0.8);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.image-container:hover .info-box {
+    visibility: visible;
+    opacity: 1;
+}
+
