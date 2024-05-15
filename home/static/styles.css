@@ -92,6 +92,7 @@ a{
     justify-content: center;
     margin-top: 15%;
     display: flex;
+    grid-template: 100px / auto auto auto;
 }
 
 body{
