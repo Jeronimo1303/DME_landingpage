@@ -1,8 +1,10 @@
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Adjust the minimum and maximum size as needed */
-    grid-gap: 10px; /* Adjust gap between items as needed */
-  }
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 10px;
+    /* Keep grid items at full opacity */
+    opacity: 1;
+}
 
 .grid-item {
     width: 100%;
@@ -32,7 +34,7 @@
     border-radius: 50%; /* Optional: make images circular */
 }
 
-.main-header{
+.main-header {
     width: 100%;
     z-index: 1000;
     display: flex;
@@ -40,8 +42,9 @@
     justify-content: space-between;
     overflow: hidden;
     padding: 1rem 1rem 1rem 0;
-    background-color: #2337c6;
+    background-color: rgba(35, 55, 198, 1); /* Set header background color with full opacity */
     color: #fff;
+    opacity: 1; /* Ensure full opacity */
 }
 .nav{
     display: flex;
@@ -85,15 +88,19 @@ a{
     margin-top: 5%;
 }
 
-.main-content{
+.main-content {
     text-align: center;
+    opacity: 1; /* Ensure full opacity */
 }
-.main-grid{
+.main-grid {
     justify-content: center;
     margin-top: 15%;
     display: flex;
+    opacity: 1; /* Ensure full opacity */
 }
 
-body{
-    background-color: #fafafa;
+body {
+    /* Keep the background pattern opaque */
+    background: repeating-linear-gradient(-45deg, rgba(68, 76, 247, 0.5), rgba(68, 76, 247, 0.5) 5px, rgba(229, 229, 247, 0.5) 5px, rgba(229, 229, 247, 0.5) 25px);
 }
+
