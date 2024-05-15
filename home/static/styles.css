@@ -42,10 +42,16 @@
     justify-content: space-between;
     overflow: hidden;
     padding: 1rem 1rem 1rem 0;
-    background-color: rgba(35, 55, 198, 1); /* Set header background color with full opacity */
+    background-color: rgb(62, 118, 137); /* Set header background color with full opacity */
     color: #fff;
     opacity: 1; /* Ensure full opacity */
 }
+
+
+
+
+
+
 .nav{
     display: flex;
     align-items: center;
@@ -85,7 +91,7 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 5%;
+
 }
 
 .main-content {
@@ -101,7 +107,7 @@ a{
 
 body {
     /* Keep the background pattern opaque */
-    background: repeating-linear-gradient(-45deg, rgba(68, 76, 247, 0.5), rgba(68, 76, 247, 0.5) 5px, rgba(229, 229, 247, 0.5) 5px, rgba(229, 229, 247, 0.5) 25px);
+    background: repeating-linear-gradient(-45deg, rgba(0, 0, 0, 0.2), rgba(68, 76, 247, 0.2) 5px, rgba(31, 254, 158, 0.1) 5px, rgba(0, 0, 0, 0.2) 25px);
 }   
 
 .image-container {
@@ -128,3 +134,25 @@ body {
     opacity: 1;
 }
 
+input :hover{
+    transform: scale(1.1);
+}
+
+h1{
+    /* Your existing styles for h1 */
+    font-size: 200px; /* Example font size */
+    transition: transform 0.3s ease; /* Adding a smooth transition effect */
+}
+h1 :hover{
+    transform: scale(1.2); /* Scale up the text by 20% when hovered */
+}
+
+select{
+    font-size: 50px; 
+    font-weight: bold; 
+    display: block; 
+    color: #ffffff; 
+    text-decoration: none;
+    background-color: #0b0a22;
+    text-align: center;
+}

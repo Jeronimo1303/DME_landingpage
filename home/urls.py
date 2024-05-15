@@ -4,10 +4,10 @@ from cliente import views as lp_v
 import os
 
 urlpatterns = [
-    path('', views.index, name = "index"),
+    #path('', views.index, name = "index"),
     path('about/', views.about, name = "about"),
     path('search/', views.search, name = "search"),
-    path('landingpage/', lp_v.cliente, name = "cliente")
+    path('', lp_v.cliente, name = "cliente")
 ]
 
 current_directory = os.path.dirname(os.path.abspath(__file__))

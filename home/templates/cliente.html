@@ -12,9 +12,9 @@
 </head>
 
 <body >
-    <header class="main-header" style="opacity: 1;">
+    <header class="main-header fade" style="opacity: 1;">
         <nav class="nav">
-            <h1><img src="{% static '/Logos/DMElogo.png' %}" alt="LCM_Logo" class="logo" width="200" ></h1>
+            <img src="{% static '/Logos/DMElogo.png' %}" alt="LCM_Logo" class="logo" width="200" >
             <a href="">
                 DME
             </a>
@@ -25,17 +25,17 @@
     </header>
 
     <div class="main-content">
-        <h1>Bienvenido a DME!</h1>
-        <div class="submit-btn">
+        <h1 style="font-style: italic; margin-top: 20%;">Bienvenido a DME!</h1>
+        <div class="submit-btn" style="margin-top: 30%;">
             <form action="/action_page.php">
-                <label for="cars"></label>
-                <select name="cars" id="cars">
+                <label for="Empresa"></label>
+                <select name="Empresa" id="Empresa">
                     {% for p in Empresas %}
                         <option value="{{p.name}}">{{p.name}}</option>
                     {% endfor %}
                 </select>
                 <br><br>
-                <input type="submit" value="Submit" style="background-color: green;">
+                <input type="submit" value="Buscar" class="btn btn-success" style="font-size: 50px; padding: 1rem; transition: transform 0.3s ease;">
             </form>
         </div>
 
@@ -43,7 +43,7 @@
 
     <main class="main-grid">
         {% block content %}
-        <div style="display: grid; grid-template-columns: repeat(3, 3fr); gap: 4rem; width: 50%;">
+        <div style="display: grid; grid-template-columns: repeat(3, 3fr); gap: 15rem; width: 50%;">
             <div class="grid-container">
                 <div class="grid-item">
                     <img src="{% static '/logos/pactia.png' %}" alt="image 1">
